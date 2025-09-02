@@ -139,6 +139,7 @@ async function realizarCompra() {
       }
     }
   });
+  
 
   localStorage.setItem("productosStock", JSON.stringify(productosData));
 
@@ -348,34 +349,38 @@ async function realizarCompra() {
       formularioPedido.reset();
     });
 
-    // === CARGAR PRODUCTOS INICIAL ===
-    const cargarProductos = async () => {
-      try {
-        // Primero intentar cargar desde localStorage
-        const stockGuardado = localStorage.getItem("productosStock");
-        
-        if (stockGuardado) {
-          productosData = JSON.parse(stockGuardado);
-          console.log("Productos cargados desde localStorage:", productosData);
-        } else {
-          // Si no hay datos en localStorage, cargar desde JSON
-          const response = await fetch("../src/data/productos.json");
-          const data = await response.json();
-          productosData = data;
-          localStorage.setItem("productosStock", JSON.stringify(productosData));
-          console.log("Productos cargados desde JSON:", productosData);
-        }
-        
-        mostrarProductosEnGrid(productosData, 1);
-        actualizarPaginacion(productosData);
-      } catch (error) {
-        console.error("Error al cargar productos:", error);
-        const productosGrid = document.getElementById("productosGrid");
-        if (productosGrid) {
-          productosGrid.innerHTML = `<p class="text-danger">No se pudieron cargar los productos. Inténtalo nuevamente más tarde.</p>`;
-        }
-      }
-    };
+    // Carga inicial de productos usando XHR
+function cargarProductosConXHR() {
+  const xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://68b6ef8f73b3ec66cec335f6.mockapi.io/api/v1/Products', true);
+  
+  xhr.onload = function() {
+    if (xhr.status >= 200 && xhr.status < 300) {
+      productosData = JSON.parse(xhr.responseText);
+      localStorage.setItem("productosStock", JSON.stringify(productosData));
+      mostrarProductosEnGrid(productosData, 1);
+      actualizarPaginacion(productosData);
+    } else {
+      console.error('Error al cargar productos con XHR:', xhr.status, xhr.statusText);
+      productosGrid.innerHTML = `<p class="text-danger">No se pudieron cargar los productos. Inténtalo nuevamente más tarde.</p>`;
+    }
+  };
+
+  xhr.onerror = function() {
+    console.error('Error de red al cargar productos con XHR.');
+    productosGrid.innerHTML = `<p class="text-danger">Error de red. Verifica tu conexión.</p>`;
+  };
+
+  xhr.send();
+}
+
+// Llama a esta función para cargar los productos al inicio, si no están en el localStorage
+if (productosData.length === 0) {
+  cargarProductosConXHR();
+} else {
+  mostrarProductosEnGrid(productosData, 1);
+  actualizarPaginacion(productosData);
+}
 
     // === FILTRADO, CARGA Y PAGINACIÓN DE PRODUCTOS ===
     const productosGrid = document.getElementById("productosGrid");
