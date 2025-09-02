@@ -1,0 +1,26 @@
+{
+  "name": "techgadget-store",
+  "version": "1.0.0",
+  "description": "Proyecto creado para actividad final del Módulo 4 del curso Frontend Trainee 2025",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch src/sass/main.scss dist/css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josemhuertab/techgadget-store.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/josemhuertab/techgadget-store/issues"
+  },
+  "homepage": "https://github.com/josemhuertab/techgadget-store#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.7",
+    "sass": "^1.89.2"
+  }
+}
