@@ -1,0 +1,50 @@
+.card {
+  background-color: $color-surface;  // Fondo blanco
+  border-radius: 12px;               // Borde más suave y redondeado
+  box-shadow: 0 6px 15px rgba($color-primary, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba($color-accent, 0.3);
+  }
+
+  .card-img-top {
+    object-fit: contain;
+    height: 250px;
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .card-title {
+    color: $color-primary;
+    font-weight: 700;
+    font-size: 1.15rem;
+  }
+
+  .card-text {
+    color: $color-muted;
+    font-size: 0.95rem;
+  }
+
+  .btn {
+    align-self: center;
+    width: 100%;
+    background: $gradient-primary;
+    border: none;
+    box-shadow: 0 4px 8px rgba($color-primary, 0.3);
+    transition: background 0.4s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      background: $gradient-accent;
+      box-shadow: 0 6px 12px rgba($color-accent, 0.5);
+    }
+  }
+}

@@ -1,0 +1,9 @@
+body {
+  background-color: $color-bg;
+  color: $color-text;
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

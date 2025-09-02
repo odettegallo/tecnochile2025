@@ -1,0 +1,31 @@
+// ===== Abstracts =====
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+// ===== Bootstrap =====
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+// ===== Base =====
+@import 'base/base';
+@import 'base/typography';
+@import 'base/animations';
+
+// ===== Layout =====
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/carrousel';
+
+// ===== Components =====
+@import 'components/buttons';
+@import 'components/cards';
+@import 'components/carrito';
+@import 'components/links';
+
+// ===== Pages =====
+@import 'pages/home';
+@import 'pages/products';
+@import 'pages/contact';
+@import 'pages/faq';
+
+// ===== Themes =====
+@import 'themes/dark-mode';

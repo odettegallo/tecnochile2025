@@ -1,0 +1,27 @@
+html, body {
+  overflow-x: hidden;
+  height: 100%;
+}
+
+// SCSS de animaciones
+// Fade rápido sobre el contenido principal
+.main-content.fade-in {
+  opacity: 0;
+  animation: fadeUp 0.5s ease forwards;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Nueva clase para remover el transform después de la animación
+body.animation-complete {
+  transform: none !important;
+}

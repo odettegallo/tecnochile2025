@@ -1,0 +1,22 @@
+.btn-outline-primary {
+  align-items: center;
+}
+
+.btn-primary {
+  background: $gradient-primary;
+  border: none;
+  color: $color-text-light;
+  font-weight: 600;
+  transition: background 0.4s ease, box-shadow 0.3s ease, transform 0.3s ease;
+
+  &:hover {
+    background: $gradient-accent;
+    box-shadow: 0 6px 12px rgba($color-accent, 0.4);
+    transform: translateY(-2px);
+  }
+
+  &:focus, &:active {
+    background: $gradient-accent;
+    box-shadow: 0 0 0 0.2rem rgba($color-accent, 0.5);
+  }
+}

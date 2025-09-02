@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechGadget Store | Productos</title>
+    <link rel="stylesheet" href="../dist/css/styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+        async></script>
+    <script src="../dist/js/productos.js" defer></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="productos.html">TechGadget Store</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="home.html" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="productos.html" class="nav-link active">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="crearproducto.html" class="nav-link">Inventario</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contacto.html" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+                <button id="darkModeToggle" class="btn btn-sm btn-outline-secondary ms-2">
+                    🌙
+                </button>
+                <button id="logoutBtn" class="btn btn-sm btn-outline-danger ms-2" style="display: none;">
+                    <i class="bi bi-box-arrow-right"></i> Cerrar Sesión
+                </button>
+            </div>
+        </div>
+    </nav>
+    <main class="container my-5">
+        <h2 class="text-center mb-4">Inventario de Productos</h2>
+          <div class="d-flex justify-content-center mb-4">
+            <a href="crearproducto.html" class="btn btn-primary">
+                <i class="bi bi-plus-circle-fill"></i> Ingresar Nuevo Producto
+            </a>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-striped table-hover align-middle">
+                <thead class="table-dark">
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Descripción</th>
+                        <th scope="col">Categoría</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Cantidad</th>
+                        <th scope="col">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="listaProductos">
+                    </tbody>
+            </table>
+        </div>
+    </main>
+
+    <div class="modal fade" id="editarProductoModal" tabindex="-1" aria-labelledby="editarProductoModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editarProductoModalLabel">Editar Producto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="editarProductoForm">
+                        <div class="mb-3">
+                            <label for="editNombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="editNombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="editDescripcion" class="form-label">Descripción</label>
+                            <textarea class="form-control" id="editDescripcion" rows="3" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="editPrecio" class="form-label">Precio</label>
+                            <input type="number" class="form-control" id="editPrecio" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="editCategoria" class="form-label">Categoría</label>
+                            <input type="text" class="form-control" id="editCategoria" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="editCantidad" class="form-label">Cantidad</label>
+                            <input type="number" class="form-control" id="editCantidad" required>
+                        </div>
+                        <input type="hidden" id="editProductoId">
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+[
+  {
+    "id": 95843,
+    "img": "../src/img/productos/audifonos-inalambricos-1.jpg",
+    "nombre": "Audífonos Bluetooth",
+    "categoria": "audífonos",
+    "etiquetas": ["inalámbricos", "bluetooth", "deporte"],
+    "desc": "Audífonos de alta calidad, ideales para actividades al aire libre con conexión inalámbrica.",
+    "precio": 19990,
+    "stock": 15
+  },
+  {
+    "id": 42518,
+    "img": "../src/img/productos/audifonos-compactos.jpg",
+    "nombre": "Audífonos Bluetooth Compactos",
+    "categoria": "audífonos",
+    "etiquetas": ["inalámbricos", "bluetooth", "compactos"],
+    "desc": "Libertad de movimiento con sonido envolvente.",
+    "precio": 24990,
+    "stock": 10
+  },
+  {
+    "id": 95482,
+    "img": "../src/img/productos/mouse-rgb.jpg",
+    "nombre": "Mouse RGB",
+    "categoria": "mouse",
+    "etiquetas": ["rgb", "gaming", "inalámbrico"],
+    "desc": "Mouse con iluminación RGB, perfecto para gaming y trabajo.",
+    "precio": 22990,
+    "stock": 20
+  },
+  {
+    "id": 13248,
+    "img": "../src/img/productos/teclado-rgb-1.jpg",
+    "nombre": "Teclado Mecánico RGB",
+    "categoria": "teclado",
+    "etiquetas": ["rgb", "mecánico", "gaming"],
+    "desc": "Teclado mecánico ideal para oficina y gaming con retroiluminación.",
+    "precio": 25990,
+    "stock": 8
+
+  },
+  {
+    "id": 68421,
+    "img": "../src/img/productos/cargador-inalambrico.jpg",
+    "nombre": "Cargador Inalámbrico",
+    "categoria": "cargador",
+    "etiquetas": ["inalámbrico", "rápido", "compatible"],
+    "desc": "Carga rápida y cómoda para tus dispositivos.",
+    "precio": 14990,
+    "stock": 25
+  },
+  {
+    "id": 94871,
+    "img": "../src/img/productos/drone-compacto.jpg",
+    "nombre": "Drone Compacto",
+    "categoria": "drone",
+    "etiquetas": ["fotografía", "aérea", "fácil de usar"],
+    "desc": "Drone de fotografía aérea fácil de manejar y con buena autonomía.",
+    "precio": 119990,
+    "stock": 5
+  },
+  {
+    "id": 32457,
+    "img": "../src/img/productos/audifonos-inalambricos-2.jpg",
+    "nombre": "Audífonos Inalámbricos Pro",
+    "categoria": "audífonos",
+    "etiquetas": ["inalámbricos", "bluetooth", "pro"],
+    "desc": "Sonido de alta fidelidad para disfrutar música en cualquier lugar.",
+    "precio": 79990,
+    "stock": 12
+  },
+  {
+    "id": 64847,
+    "img": "../src/img/productos/monitor-full-led-hd.jpg",
+    "nombre": "Monitor LED Full HD",
+    "categoria": "monitor",
+    "etiquetas": ["full hd", "led", "pantalla"],
+    "desc": "Pantalla con imágenes nítidas y claras para trabajo o entretenimiento.",
+    "precio": 149990,
+    "stock": 7
+  },
+  {
+    "id": 14935,
+    "img": "../src/img/productos/mouse-rgb-inalambrico.jpg",
+    "nombre": "Mouse Inalámbrico",
+    "categoria": "mouse",
+    "etiquetas": ["inalámbrico", "ergonómico", "bluetooth"],
+    "desc": "Precisión y comodidad para tus tareas diarias.",
+    "precio": 19990,
+    "stock": 30
+  },
+  {
+    "id": 14847,
+    "img": "../src/img/productos/tablet.jpg",
+    "nombre": "Tablet 10 pulgadas",
+    "categoria": "tablet",
+    "etiquetas": ["portátil", "pantalla táctil", "multimedia"],
+    "desc": "Ideal para estudiar, trabajar o entretenerse en cualquier lugar.",
+    "precio": 87990,
+    "stock": 18
+  },
+  {
+    "id": 96148,
+    "img": "../src/img/productos/auriculares-gaming.jpg",
+    "nombre": "Auriculares Gaming",
+    "categoria": "audífonos",
+    "etiquetas": ["gaming", "micrófono", "sonido envolvente"],
+    "desc": "Sumérgete en tus juegos con sonido envolvente y micrófono integrado.",
+    "precio": 59990,
+    "stock": 14
+  },
+  {
+    "id": 36485,
+    "img": "../src/img/productos/camara-web-hd.jpg",
+    "nombre": "Cámara Web HD",
+    "categoria": "cámara",
+    "etiquetas": ["hd", "videollamadas", "plug and play"],
+    "desc": "Videollamadas con calidad de imagen clara y nítida.",
+    "precio": 29990,
+    "stock": 22
+  }
+]

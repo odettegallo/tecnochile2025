@@ -1,0 +1,27 @@
+// Colors
+$color-bg: #F7FAFC;
+$color-surface: #FFFFFF;
+$color-primary: #0D3B66;
+$color-secondary: #1282A2;
+$color-accent: #00BFA6;
+$color-text: #1B262C;
+$color-text-light: #FFFFFF;
+$color-muted: #4F6D7A;
+
+// Gradients
+$gradient-primary: linear-gradient(135deg, #0D3B66 0%, #1282A2 100%);
+$gradient-accent: linear-gradient(135deg, #00BFA6 0%, #32E0C4 100%);
+
+// Typography
+$font-family-base: 'Roboto', sans-serif;
+$font-size-base: 1rem;
+
+// === Dark Mode Variables ===
+$color-bg-dark: #1B262C;
+$color-surface-dark: #202C33;
+$color-primary-dark: #00BFA6;
+$color-secondary-dark: #1282A2;
+$color-accent-dark: #32E0C4;
+$color-text-dark: #F7FAFC;
+$color-muted-dark: #B0BEC5;
+$gradient-primary-dark: linear-gradient(135deg, #1282A2 0%, #00BFA6 100%);

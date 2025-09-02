@@ -1,0 +1,25 @@
+.hero {
+  background-color: $color-secondary;
+  color: $color-text-light;
+  padding: 4rem 1rem;
+
+  &__title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  &__subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.featured-products {
+  background-color: $color-bg;
+
+  h2 {
+    color: $color-primary;
+    font-weight: 600;
+  }
+}
